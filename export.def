@@ -1,0 +1,25 @@
+LIBRARY   MonitorBrightness
+EXPORTS
+	mb_version											@1
+	mb_sum												@2
+	mb_last_error										@3
+
+	mb_dxva2_init										@10
+	mb_dxva2_get_count									@11
+	mb_dxva2_set_brightness								@12
+	mb_dxva2_get_brightness								@13
+	mb_dxva2_get_name									@14
+	mb_dxva2_cleanup									@15
+
+	mb_wmi_init											@20
+	mb_wmi_set_brightness								@21
+	mb_wmi_cleanup										@22
+
+	mb_ioctl_init										@30
+	mb_ioctl_search_lcd=mb_ioctl_init					@31
+	mb_ioctl_set_brightness								@32
+	mb_ioctl_set_lcd_brightness=mb_ioctl_set_brightness	@33
+	mb_ioctl_get_brightness								@34
+	mb_ioctl_get_lcd_brightness=mb_ioctl_get_brightness	@35
+	mb_ioctl_cleanup									@36
+	mb_ioctl_close_lcd=mb_ioctl_cleanup					@37
